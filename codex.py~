@@ -1,0 +1,17 @@
+import sys
+name = raw_input("enter your name ")
+
+if not name:
+   sys.exit(0)
+ 
+if name:
+  answer = raw_input("Are you from codeX " + name.upper() + "?")
+
+if answer == str(["yes","y"]):
+   print("Rock on codeX is cool!!!")
+
+elif answer =="no":
+  print("You really don't know what you\'re missing" +" " + name.upper())
+
+else:
+  sys.exit(0)
